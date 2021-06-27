@@ -3,6 +3,10 @@ https://leetcode-cn.com/problems/3sum/
 三数和
 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
 注意：答案中不可以包含重复的三元组。
+
+先排序
+第一个数的最大范围是n-2,
+如果第一个数取值已经大于0  则退出
 """
 from typing import List
 
@@ -16,7 +20,7 @@ def threeSum(nums: List[int]) -> List[List[int]]:
     for k in range(n-2):
         if nums[k] > 0:
             return result
-        if nums[k] == nums[k-1] and k > 0:
+        if nums[k] == nums[k-1] and k > 0: # k > 0  是为了从第二个数开始判重
             continue
         i, j = k + 1, n-1
         while i < j:
