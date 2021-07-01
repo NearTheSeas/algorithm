@@ -1,6 +1,11 @@
 """ 
 https://leetcode-cn.com/problems/generate-parentheses/
 22. 括号生成
+
+左右括号各n个
+每次递归 
+    左括号数量小于n
+    右括号数量小于左括号
 """
 from typing import List
 
