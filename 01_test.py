@@ -1,4 +1,4 @@
-from LeetCode_980 import Solution
+from LeetCode_410 import Solution
 
 from typing import List
 
@@ -19,7 +19,7 @@ from typing import List
 if __name__ == '__main__':
 
     s = Solution()
-    r = s.uniquePathsIII([[1,0,0,0],[0,0,0,0],[0,0,2,-1]])
+    r = s.splitArray([7,2,5,10,8],2)
     print(r)
 
 

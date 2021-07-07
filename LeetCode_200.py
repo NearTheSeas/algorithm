@@ -8,6 +8,38 @@ https://leetcode-cn.com/problems/number-of-islands/
 from typing import List
 
 
+class UnionFind:
+    def __init__(self, grid: List[List[str]]) -> None:
+        m, n = len(grid), len(grid[0])
+        self.count = 0
+        self.parent = [-1]*(m*n)
+        self.rank = [0]*(m*n)
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == '1':
+                    self.parent[i*n+j] = i*n+j
+                    self.count += 1
+
+    def find(self, i):
+        if self.parent[i] != i:
+            self.parent[i] = self.find(self.parent[i])
+        return self.parent[i]
+
+    def union(self, x, y):
+        rootx = self.find(x)
+        rooty = self.find(y)
+        if rootx != rooty:
+            if self.rank[rootx] < self.rank[rooty]:
+                rootx, rooty = rooty, rootx
+            self.parent[rooty] = rootx
+            if self.rank[rootx] == self.rank[rooty]:
+                self.rank[rootx] += 1
+            self.count -= 1
+
+    def getCount(self):
+        return self.count
+
+
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         counter = 0
@@ -36,3 +68,20 @@ class Solution:
                     counter += 1
                     dfs(row, col)
         return counter
+
+    def numIslands2(self, grid: List[List[str]]) -> int:
+        rows = len(grid)
+        if rows == 0:
+            return 0
+        columns = len(grid[0])
+
+        uf = UnionFind(grid)
+        for row in range(rows):
+            for col in range(columns):
+                if grid[row][col] == '1':
+                    grid[row][col] = '0'
+                    for newRow, newCol in [(row - 1, col), (row, col+1), (row+1, col), (row, col-1)]:
+                        if 0 <= newRow < rows and 0 <= newCol < columns and grid[newRow][newCol] == '1':
+                            uf.union(row*columns + col,
+                                     newRow*columns + newCol)
+        return uf.getCount()
