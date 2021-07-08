@@ -1,4 +1,4 @@
-""" 
+"""
 https://leetcode-cn.com/problems/minimum-genetic-mutation/
 433. 最小基因变化
 
@@ -39,4 +39,34 @@ class Solution:
                     cur = old
             level += 1
 
+        return -1
+
+    def minMutation2(self, start: str, end: str, bank: List[str]) -> int:
+        if start == end:
+            return 0
+        if end not in bank:
+            return -1
+        level = 0
+        bankSet = set(bank)
+        if start in bankSet:
+            bankSet.remove(start)
+        hashMap = ['A', 'C', 'G', 'T']
+        front = {start}
+        back = {end}
+
+        while front:
+            level += 1
+            next_front = set()
+            for cur in front:
+                for i in range(8):
+                    for ch in hashMap:
+                        newStr = cur[:i] + ch + cur[i+1:]
+                        if newStr in back:
+                            return level
+                        if newStr in bankSet:
+                            next_front.add(newStr)
+                            bankSet.remove(newStr)
+            front = next_front
+            if len(back) < len(front):
+                front, back = back, front
         return -1
