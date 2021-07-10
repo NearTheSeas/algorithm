@@ -14,5 +14,6 @@ def climbStairs(n: int) -> int:
         f3 = f2 + f1
         f1 = f2
         f2 = f3
-
+ 
     return f3
+
