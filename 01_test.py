@@ -1,4 +1,4 @@
-from LeetCode_410 import Solution
+from LeetCode_433 import Solution
 
 from typing import List
 
@@ -18,8 +18,17 @@ from typing import List
 
 if __name__ == '__main__':
 
+    #     "AAAAAAAA"
+    # "CCCCCCCC"
+    # ["AAAAAAAA","AAAAAAAC","AAAAAACC","AAAAACCC","AAAACCCC","AACACCCC","ACCACCCC","ACCCCCCC","CCCCCCCA","CCCCCCCC"]
+
+    # "AAAACCCC"
+    # "CCCCCCCC"
+    # ["AAAACCCA","AAACCCCA","AACCCCCA","AACCCCCC","ACCCCCCC","CCCCCCCC","AAACCCCC","AACCCCCC"]
+
     s = Solution()
-    r = s.splitArray([7,2,5,10,8],2)
+    r = s.minMutation2("AAAACCCC", "CCCCCCCC", [
+                       "AAAACCCA", "AAACCCCA", "AACCCCCA", "AACCCCCC", "ACCCCCCC", "CCCCCCCC", "AAACCCCC", "AACCCCCC"])
     print(r)
 
 
