@@ -25,6 +25,7 @@ class Solution:
         state = "".join(str(c) for c in board[0]+board[1])
         start = state.index('0')
         visited = set()
+        # (0的位置，当前字符串，距离)
         q = collections.deque([(start, state, 0)])
         while q:
             cur, state, steps = q.popleft()
