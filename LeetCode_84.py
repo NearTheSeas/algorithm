@@ -17,7 +17,7 @@ class Solution:
         stack = [0]
         n += 2
         for i in range(n):
-            while heights[i] < heights[stack[heights-1]]:
+            while heights[i] < heights[stack[-1]]:
                 height = heights[stack.pop()]
                 width = i - stack[-1] - 1
                 ans = max(ans, width*height)

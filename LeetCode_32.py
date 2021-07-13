@@ -22,6 +22,7 @@ class Solution:
             if s[i] == ")":
                 if s[i-1] == "(":
                     dp[i] = dp[i-2] + 2
+                # 前一个括号有匹配对
                 elif i-dp[i-1]-1 >= 0 and s[i-dp[i-1]-1] == "(":
                     if dp[i-1] > 0:
                         dp[i] = dp[i-1] + dp[i-dp[i-1]-2] + 2
