@@ -1,4 +1,4 @@
-from LeetCode_433 import Solution
+from LeetCode_190 import Solution
 
 from typing import List
 
@@ -27,8 +27,7 @@ if __name__ == '__main__':
     # ["AAAACCCA","AAACCCCA","AACCCCCA","AACCCCCC","ACCCCCCC","CCCCCCCC","AAACCCCC","AACCCCCC"]
 
     s = Solution()
-    r = s.minMutation2("AAAACCCC", "CCCCCCCC", [
-                       "AAAACCCA", "AAACCCCA", "AACCCCCA", "AACCCCCC", "ACCCCCCC", "CCCCCCCC", "AAACCCCC", "AACCCCCC"])
+    r = s.reverseBits(int('00000010100101000001111010011100'))
     print(r)
 
 
