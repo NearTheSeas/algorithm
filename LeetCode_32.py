@@ -6,6 +6,7 @@ https://leetcode-cn.com/problems/longest-valid-parentheses/
 
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
+        # 栈顶记录最后一个未匹配的括号
         stack, result = [(-1, ')')], 0
         for i, paren in enumerate(s):
             if paren == ')' and stack[-1][1] == '(':

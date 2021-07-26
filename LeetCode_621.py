@@ -20,16 +20,17 @@ import collections
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
         freq = collections.Counter(tasks)
-        maxExec = max(freq.values())
-        maxCnt = sum(1 for v in freq.values() if v == maxExec)
-        return max((maxExec - 1)*(n-1) + maxCnt, len(tasks))
+        maxExec = max(freq.values())  # 最多的执行次数
+        maxCnt = sum(1 for v in freq.values() if v == maxExec)  # 具有最多执行次数的任务数量
+        return max((maxExec - 1)*(n+1) + maxCnt, len(tasks))
 
     def leastInterval2(self, tasks: List[str], n: int) -> int:
         freq = collections.Counter(tasks)
         n = len(freq)
-        nextValid = [1] * n
-        rest = list(freq.values())
-        time = 0 # 下一个时间点
+        nextValid = [1] * n  # 表示其因冷却限制，最早可以执行的时间
+        rest = list(freq.values())  # 剩余执行次数
+        time = 0  # 当前时间
+        # 选择不在冷却中并且剩余执行次数最多的那个任务
         for _ in range(len(tasks)):
             time += 1
             minNextValid = min(nextValid[j] for j in range(n) if rest[j] > 0)
@@ -37,9 +38,9 @@ class Solution:
 
             best = -1
             for j in range(n):
-                if rest[j] and nextValid[j] <= time: # 任务类型j 还有可执行次数 且冷却期在time范围内 
-                    if best == -1 or rest[j] > rest[best]: # 保留剩余任务数量最大的
+                if rest[j] and nextValid[j] <= time:  # 任务类型j 还有可执行次数 且冷却期在time范围内
+                    if best == -1 or rest[j] > rest[best]:  # 保留剩余任务数量最大的
                         best = j
-        nextValid[best] = time + n + 1 # 更新任务的下一执行时间
+        nextValid[best] = time + n + 1  # 更新任务的下一执行时间
         rest[best] -= 1
         return time

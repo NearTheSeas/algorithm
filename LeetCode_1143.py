@@ -1,6 +1,9 @@
 """ 
 https://leetcode-cn.com/problems/longest-common-subsequence/
 1143. 最长公共子序列
+
+dp[i][j] 表示 text1 和 text2的长度，所以范围是[0,m+1]  [0,n+1]
+i j从1开始是因为字符串下标从0开始 取0的情况 是边界值
 """
 
 

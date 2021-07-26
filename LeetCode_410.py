@@ -33,3 +33,17 @@ class Solution:
             else:
                 left = mid + 1
         return left
+
+    def splitArray2(self, nums: List[int], m: int) -> int:
+        n = len(nums)
+        dp = [[float('inf')]*(m+1) for _ in range(n+1)]
+        sub = [0]  # 前缀和
+        for num in nums:
+            sub.append(sub[-1]+num)
+
+        dp[0][0] = 0
+        for i in range(1, n+1):  # 前i个数
+            for j in range(1, min(i, m)+1):  # 分成不超过m个子数组
+                for k in range(i): # K个数 分割成j-1段， sub[i]-sub[k]是最后一段的和
+                    dp[i][j] = min(dp[i][j], max(dp[k][j-1], sub[i]-sub[k]))
+        return dp[-1][-1]

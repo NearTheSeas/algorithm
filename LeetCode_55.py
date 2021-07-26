@@ -14,3 +14,13 @@ class Solution:
                 if maxLength >= n - 1:
                     return True
         return False
+    
+    def canJump2(self, nums: List[int]) -> bool:
+        far, n  = 0, len(nums)
+        for i,num in enumerate(nums):
+            print(i,num)
+            if i <= far:
+                far = max(i+num, far)
+                if far >= n - 1:
+                    return True
+        return False

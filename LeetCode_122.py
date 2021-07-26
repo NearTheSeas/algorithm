@@ -17,12 +17,21 @@ from typing import List
 
 
 class Solution:
+
     def maxProfit(self, prices: List[int]) -> int:
+        n = len(prices)
+        dp = [[0]*2 for _ in range(n)]
+        dp[0][0] = 0  # 不持有
+        dp[0][1] = -float('inf')  # 持有
+        for i in range(1, n):
+            dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])
+            dp[i][1] = max(dp[i-1][0] - prices[i], dp[i-1][1])
+
+        return dp[-1][0]
+
+    def maxProfit2(self, prices: List[int]) -> int:
         curHold, curNotHold = -float('inf'), 0
-
         for stock in prices:
-            prevHold, preNotHold = curHold, curNotHold
-            curHold = max(prevHold, preNotHold - stock)
-            curNotHold = max(preNotHold, prevHold + stock)
-
+            curHold, curNotHold = max(
+                curHold, curNotHold - stock), max(curNotHold, curHold + stock)
         return curNotHold if prices else 0

@@ -14,7 +14,7 @@ class Solution:
     def rob(self, nums: List[int]) -> int:
         def robRange(start: int, end: int) -> int:
             first, second = nums[start], max(nums[start], nums[start+1])
-            for i in range(start+1, end + 1):
+            for i in range(start+2, end + 1):
                 first, second = second, max(first + nums[i], second)
             return second
 

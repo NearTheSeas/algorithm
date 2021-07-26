@@ -13,11 +13,32 @@ https://leetcode-cn.com/problems/palindromic-substrings/
 class Solution:
     def countSubstrings(self, s: str) -> int:
         ans = 0
-        for center in range(len(s)*2-1):
-            left = center >> 1
-            right = left + center % 2
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                ans += 1
-                left -= 1
-                right += 1
+        n = len(s)
+        for i in range(n):
+            ans += self.extend(s, i, i, n)
+            ans += self.extend(s, i, i+1, n)
+
+        return ans
+
+    def extend(self, s, i, j, n):
+        ans = 0
+        while i >= 0 and j < n and s[i] == s[j]:
+            ans += 1
+            i -= 1
+            j += 1
+        return ans
+
+    def countSubstrings2(self, s: str) -> int:
+        n = len(s)
+        dp = [[False]*n for _ in range(n)]
+        ans = 0
+        for i in range(n-1, -1, -1):
+            for j in range(i, n):
+                if s[i] == s[j]:
+                    if j-i <= 1:
+                        ans += 1
+                        dp[i][j] = True
+                    elif dp[i+1][j-1]:
+                        ans += 1
+                        dp[i][j] = True
         return ans

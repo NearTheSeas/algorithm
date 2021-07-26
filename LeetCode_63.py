@@ -15,7 +15,7 @@ class Solution:
 
         # 处理第一列
         for i in range(1, m):
-            # 当前行的第一列有障碍物 或者 前一行过来的值是0
+            # 当前行的当前一列有障碍物 或者 前一行过来的值是0
             if obstacleGrid[i][0] or dp[i-1][0] == 0:
                 dp[i][0] = 0
             else:
