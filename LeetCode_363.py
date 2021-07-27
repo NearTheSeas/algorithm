@@ -7,13 +7,13 @@ Sr - Sl < k
 Sl < Sr - k
 """
 from typing import List
-
 from sortedcontainers.sortedlist import SortedList
+import bisect
 
 
 class Solution:
     def maxSumSubmatrix(self, matrix: List[List[int]], k: int) -> int:
-        ans = -float('inf')
+        ans = float('-inf')
         m, n = len(matrix), len(matrix[0])
 
         for i in range(m):
@@ -27,7 +27,8 @@ class Solution:
                 for v in total:
                     s += v
                     # bisect_left 二分插入
-                    lb = totalSet.bisect_left(s-k)
+                    lb = bisect.bisect_left(totalSet, s-k)
                     if lb != len(totalSet):
                         ans = max(ans, s-totalSet[lb])
                     totalSet.add(s)
+        return ans
