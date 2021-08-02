@@ -17,8 +17,8 @@ class Solution:
         merged = []
         for interval in intervals:
             l, r = interval
-             # 如果列表为空，或者当前区间与上一区间不重合，直接添加
-            if not merged or merged[-1][1] < l: 
+            # 如果列表为空，或者当前区间与上一区间不重合，直接添加
+            if not merged or merged[-1][1] < l:
                 merged.append(interval)
             else:
                 merged[-1][1] = max(merged[-1][1], r)

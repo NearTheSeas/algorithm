@@ -25,7 +25,7 @@ class Solution:
         circles = sum(parent[i] == i for i in range(provinces))
         return circles
 
-    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+    def findCircleNum2(self, isConnected: List[List[int]]) -> int:
         def dfs(i: int):
             for j in range(provinces):
                 if isConnected[i][j] == 1 and j not in visited:
@@ -39,6 +39,6 @@ class Solution:
         for i in range(provinces):
             if i not in visited:
                 dfs(i)
-                visited.add(i)
+                ans+=1
 
         return ans

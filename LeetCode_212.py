@@ -1,6 +1,7 @@
 """ 
 https://leetcode-cn.com/problems/word-search-ii/
 212. 单词搜索 II
+trie + 回溯
 """
 from typing import List
 
@@ -17,9 +18,9 @@ class Solution:
         rows, columns = len(board), len(board[0])
         result = []
 
-        def backtrack(row, col, parend):
+        def backtrack(row, col, parent):
             ch = board[row][col]
-            node = parend[ch]
+            node = parent[ch]
             wordMatched = node.pop(WORD_KEY, False)
             if wordMatched:
                 result.append(wordMatched)

@@ -2,6 +2,7 @@
 https://leetcode-cn.com/problems/maximal-rectangle/
 85. 最大矩形
 """
+from typing import List
 
 
 class Solution:

@@ -8,36 +8,21 @@ from typing import List
 
 
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
-        row = [set(range(1, 10)) for _ in range(9)]
-        col = [set(range(1, 10)) for _ in range(9)]
-        block = [set(range(1, 10)) for _ in range(9)]
 
-        empty = []
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        row = [set(range(1, 10)) for _ in range(9)]  # 行剩余可用数字
+        col = [set(range(1, 10)) for _ in range(9)]  # 列剩余可用数字
+        block = [set(range(1, 10)) for _ in range(9)]  # 块剩余可用数字
+
         for i in range(9):
             for j in range(9):
-                if board[i][j] != '.':
+                if board[i][j] != '.':  # 更新可用数字
+                    b = (i // 3)*3 + j // 3
                     val = int(board[i][j])
+                    if val not in row[i] & col[j] & block[b]:
+                        return False
                     row[i].remove(val)
                     col[j].remove(val)
-                    block[(i//3)*3 + j // 3].remove(val)
-                else:
-                    empty.append((i, j))
+                    block[(i // 3)*3 + j // 3].remove(val)
 
-        def backtrack(iter=0):
-            if iter == len(empty):
-                return True
-            i, j = empty[iter]
-            b = (i//3)*3+j//3
-            for val in row[i] & col[j] & block[b]:
-                row[i].remove(val)
-                col[j].remove(val)
-                block[(i//3)*3 + j // 3].remove(val)
-                board[i][j] = str(val)
-                if backtrack(iter+1):
-                    return True
-                row[i].add(val)
-                col[j].add(val)
-                block[b].add(val)
-            return False
-        backtrack(0)
+        return True

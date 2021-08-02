@@ -2,7 +2,7 @@
 https://leetcode-cn.com/problems/power-of-two/
 231. 2 的幂
 
-一个数 nn 是 22 的幂，当且仅当 nn 是正整数，并且 nn 的二进制表示中仅包含 11 个 11
+一个数 n 是 2 的幂，当且仅当 n 是正整数，并且 n 的二进制表示中仅包含 1 个 1
 """
 
 
