@@ -13,3 +13,13 @@ class Solution:
             pre = max(pre + nums[i], nums[i])
             ans = max(pre, ans)
         return ans
+
+    def maxSubArray2(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+
+        pre, ans = nums[0], 0
+        for num in nums:
+            pre = max(num, pre + num)
+            ans = max(ans, pre)
+        return ans

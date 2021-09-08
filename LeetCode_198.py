@@ -2,6 +2,7 @@
 https://leetcode-cn.com/problems/house-robber/
 198. 打家劫舍
 间隔取值
+注意dp[0] dp[1]的取值
 """
 from typing import List
 

@@ -1,6 +1,10 @@
 """ 
 https://leetcode-cn.com/problems/edit-distance/
 72. 编辑距离
+
+dp[i][j]
+    如果当前字符串相等，则直接跳过，
+    如果不相等，则选取 删除i，删除j，或者替换操作中，最小的值 + 1
 """
 
 

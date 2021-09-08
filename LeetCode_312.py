@@ -9,7 +9,7 @@ dp[i][j] 戳破i,j之间的气球获得的分数
 dp[i][j] = dp[i][k] + dp[k][j] + points[i]*points[k]*points[j]
 
 思路二
-dp[i][j] 在开区间(i,j)之间插入气球 k，把区间分为了 dp[i][k]+dp[k][j]
+dp[i][j] 在 开区间(i,j) 之间插入气球 k，把区间分为了 dp[i][k]+dp[k][j]
 """
 from typing import List
 from functools import lru_cache
@@ -21,8 +21,8 @@ class Solution:
         points = [1] + nums + [1]
         # nums前后补1，长度为n+2
         dp = [[0]*(n+2) for _ in range(n+2)]
-        for i in range(n, -1, -1):  # i取值范围n到0，j取值范围i+1,n+1,k取值 ij之间
-            for j in range(i+1, n+2):
+        for i in range(n-1, -1, -1):  # i取值范围n到0，j取值范围i+1,n+1,k取值 ij之间
+            for j in range(i+2, n+2):
                 for k in range(i+1, j):
                     dp[i][j] = max(dp[i][j], dp[i][k] + dp[k]
                                    [j] + points[i]*points[j]*points[k])
@@ -34,7 +34,7 @@ class Solution:
 
         @lru_cache(None)
         def solve(left: int, right: int) -> int:
-            if left >= right:
+            if left >= right-1:
                 return 0
 
             best = 0
@@ -42,4 +42,5 @@ class Solution:
                 total = val[left]*val[i]*val[right]
                 total += solve(left, i) + solve(i, right)
                 best = max(best, total)
+            return best
         return solve(0, n+1)

@@ -1,7 +1,7 @@
 """ 
 https://leetcode-cn.com/problems/longest-palindromic-substring/
 5. 最长回文子串
-
+中心扩散
 枚举所有的「回文中心」并尝试「扩展」，直到无法扩展为止
 中心点可以是一个字符 也可以是两个字符
 """

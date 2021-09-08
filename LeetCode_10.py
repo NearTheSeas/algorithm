@@ -2,6 +2,7 @@
 https://leetcode-cn.com/problems/regular-expression-matching/
 10. 正则表达式匹配
 
+不是很会~ 
 用 f[i][j] 表示 s 的前 i 个字符与 p 中的前 j 个字符是否能够匹配
 p[j]：
     可能是字母
