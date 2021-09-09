@@ -24,7 +24,7 @@ class Solution:
     def lengthOfLIS2(self, nums: List[int]) -> int:
         tails, res = [0]*len(nums), 0
         for num in nums:
-            i, j = res
+            i, j = 0, res
             while i < j:
                 mid = (i+j)//2
                 if tails[mid] < num:

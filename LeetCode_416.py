@@ -22,7 +22,7 @@ class Solution:
         dp = [[False] * (target + 1) for _ in range(n)]
         for i in range(n):
             dp[i][0] = True
-        dp[0][nums[0]] = True
+        dp[0][nums[0]] = True # 有点奇怪
         for i in range(1, n):
             num = nums[i]
             for j in range(1, target+1):
