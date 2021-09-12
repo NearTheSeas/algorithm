@@ -2,12 +2,14 @@
 https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/ 
 297. 二叉树的序列化与反序列化
 
-遍历方式可以选择 前序遍历、后续遍历、广度优先遍历，方便找出根节点
+遍历方式可以选择 
+前序遍历、后续遍历、广度优先遍历，方便找出根节点
 """
 
 
 import collections
 from base import TreeNode
+from typing import List
 
 
 class Codec:
@@ -30,7 +32,7 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        def dfs(dataList):
+        def dfs(dataList: List):
             val = dataList.pop(0)
             if val == 'null':
                 return None
@@ -72,7 +74,7 @@ class Codec:
         dataList = data.split(',')
         root = TreeNode(dataList[0])
         q = collections.deque([root])
-        i = 1
+        i = 1 # 游标
         while q:
             node = q.popleft()
             left = dataList[i]
