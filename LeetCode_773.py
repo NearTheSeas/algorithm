@@ -25,7 +25,7 @@ class Solution:
         state = "".join(str(c) for c in board[0]+board[1])
         start = state.index('0')
         visited = set()
-        # (0的位置，当前字符串，距离)
+        # (0的位置，当前字符串，步数)
         q = collections.deque([(start, state, 0)])
         while q:
             cur, state, steps = q.popleft()
@@ -35,9 +35,9 @@ class Solution:
                 continue
             else:
                 visited.add(state)
-                for next in neighbours[cur]:
+                for nxt in neighbours[cur]:
                     tmp = list(state)
-                    tmp[cur], tmp[next] = tmp[next], tmp[cur]
+                    tmp[cur], tmp[nxt] = tmp[nxt], tmp[cur]
                     tmp = "".join(tmp)
-                    q.append((next, tmp, steps+1))
+                    q.append((nxt, tmp, steps+1))
         return -1
