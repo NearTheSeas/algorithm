@@ -1,6 +1,8 @@
 """ 
 https://leetcode-cn.com/problems/koko-eating-bananas/
 875. 爱吃香蕉的珂珂
+
+搜索左侧边界的二分
 """
 from typing import List
 import math
