@@ -36,5 +36,5 @@ class Solution:
             cur.next = cur.next.next
             cur = cur.next
             pre = pre.next
-        pre.next = None
+        pre.next = None # 需要单独处理
         return res

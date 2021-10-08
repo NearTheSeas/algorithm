@@ -1,6 +1,8 @@
 """ 
 https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/
 剑指 Offer 56 - I. 数组中数字出现的次数
+
+利异或 将两个未重复的数字分到两个不同的组
 """
 
 from typing import List

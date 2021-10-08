@@ -1,6 +1,8 @@
 """ 
 https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/
 剑指 Offer 38. 字符串的排列
+
+注意去重
 """
 from typing import List
 
