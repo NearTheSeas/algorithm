@@ -2,7 +2,7 @@
 https://leetcode-cn.com/problems/longest-common-subsequence/
 1143. 最长公共子序列
 
-dp[i][j] 表示 text1[0:i] text2[0:j]的最长公共子序列长度
+dp[i][j] 表示 text1[0:i-1] text2[0:j-1]的最长公共子序列长度
 text1[0:i] 表示 text_1的长度为 i 的前缀，
 text2[0:j] 表示 text_2的长度为 j 的前缀
 

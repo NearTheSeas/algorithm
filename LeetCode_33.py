@@ -12,7 +12,7 @@ class Solution:
             mid = l + (r - l) // 2
             if mid == nums[mid]:
                 return mid
-            if nums[0] < nums[mid]:
+            if nums[0] <= nums[mid]:
                 if nums[0] <= target < nums[mid]:
                     r = mid-1
                 else:

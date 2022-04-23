@@ -1,6 +1,8 @@
 """ 
 https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/
 剑指 Offer 22. 链表中倒数第k个节点
+
+需要考虑k超过链表长度
 """
 
 from base import ListNode

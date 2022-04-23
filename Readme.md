@@ -227,7 +227,7 @@ https://leetcode-cn.com/problems/power-of-two/solution/2de-mi-by-leetcode-soluti
 # 布隆过滤器和 LRU 缓存 LFU
 
 - 了解对应的实现
-- 146. LRU 缓存机制
+- 146. LRU 缓存机制 ※※※
 
 # 排序算法
 
@@ -367,7 +367,7 @@ labuladong 的算法小抄
 - 146. LRU 缓存机制
 - 460. LFU 缓存 ※
 - 98. 验证二叉搜索树
-- 99. 恢复二叉搜索树
+- 99. 恢复二叉搜索树 ※※
 - 100. 相同的树
 - 450. 删除二叉搜索树中的节点 ※
 - 700. 二叉搜索树中的搜索
@@ -508,4 +508,169 @@ labuladong 的算法小抄
 - 剑指 Offer 68 - I. 二叉搜索树的最近公共祖先 ※※※※
 - 剑指 Offer 68 - II. 二叉树的最近公共祖先 ※※※※
 
+剑指 Offer 专项训练
+
+正数
+
+- 剑指 Offer II 001. 整数除法
+- 剑指 Offer II 002. 二进制加法
+- 剑指 Offer II 003. 前 n 个数字二进制中 1 的个数
+- 剑指 Offer II 004. 只出现一次的数字 ?
+- 剑指 Offer II 005. 单词长度的最大乘积
+
+数组
+
+- 剑指 Offer II 006. 排序数组中两个数字之和
+- 剑指 Offer II 007. 数组中和为 0 的三个数 ※
+- 剑指 Offer II 008. 和大于等于 target 的最短子数组
+- 剑指 Offer II 009. 乘积小于 K 的子数组 ※
+- 剑指 Offer II 010. 和为 k 的子数组
+- 剑指 Offer II 011. 0 和 1 个数相同的子数组 ※
+- 剑指 Offer II 012. 左右两边子数组的和相等
+- 剑指 Offer II 013. 二维子矩阵的和 ※
+
+字符串
+
+- 剑指 Offer II 014. 字符串中的变位词 ※
+- 剑指 Offer II 015. 字符串中的所有变位词
+- 剑指 Offer II 016. 不含重复字符的最长子字符串
+- 剑指 Offer II 017. 含有所有字符的最短字符串
+- 剑指 Offer II 018. 有效的回文
+- 剑指 Offer II 019. 最多删除一个字符得到回文
+- 剑指 Offer II 020. 回文子字符串的个数
+
+链表
+
+- 剑指 Offer II 021. 删除链表的倒数第 n 个结点 ※※
+- 剑指 Offer II 022. 链表中环的入口节点 ※※※
+- 剑指 Offer II 023. 两个链表的第一个重合节点
+- 剑指 Offer II 024. 反转链表
+- 剑指 Offer II 025. 链表中的两数相加
+- 剑指 Offer II 026. 重排链表 ※※
+- 剑指 Offer II 027. 回文链表 ※
+- 剑指 Offer II 028. 展平多级双向链表 ※※※
+- 剑指 Offer II 029. 排序的循环链表 ※
+
+哈希表
+
+- 剑指 Offer II 030. 插入、删除和随机访问都是 O(1) 的容器 ※
+- 剑指 Offer II 031. 最近最少使用缓存
+- 剑指 Offer II 032. 有效的变位词
+- 剑指 Offer II 033. 变位词组
+- 剑指 Offer II 034. 外星语言是否排序 ※
+- 剑指 Offer II 035. 最小时间差 v
+
+栈
+
+- 剑指 Offer II 036. 后缀表达式
+- 剑指 Offer II 037. 小行星碰撞 ?
+- 剑指 Offer II 038. 每日温度
+- 剑指 Offer II 039. 直方图最大矩形面积
+- 剑指 Offer II 040. 矩阵中最大的矩形
+
+队列
+
+- 剑指 Offer II 041. 滑动窗口的平均值
+- 剑指 Offer II 042. 最近请求次数
+- 剑指 Offer II 043. 往完全二叉树添加节点 ※
+- 剑指 Offer II 044. 二叉树每层的最大值
+- 剑指 Offer II 045. 二叉树最底层最左边的值
+- 剑指 Offer II 046. 二叉树的右侧视图
+
+树
+
+- 剑指 Offer II 047. 二叉树剪枝 ※
+- 剑指 Offer II 048. 序列化与反序列化二叉树 ※
+- 剑指 Offer II 049. 从根节点到叶节点的路径数字之和 ※※※
+- 剑指 Offer II 050. 向下的路径节点之和 ※※※
+- 剑指 Offer II 051. 节点之和最大的路径
+- 剑指 Offer II 052. 展平二叉搜索树 ※
+- 剑指 Offer II 053. 二叉搜索树中的中序后继 ※※
+- 剑指 Offer II 054. 所有大于等于节点的值之和
+- 剑指 Offer II 055. 二叉搜索树迭代器 ※※
+- 剑指 Offer II 056. 二叉搜索树中两个节点之和
+- 剑指 Offer II 057. 值和下标之差都在给定的范围内 ?
+- 剑指 Offer II 058. 日程表 ?
+
+堆
+
+- 剑指 Offer II 059. 数据流的第 K 大数值 ?
+- 剑指 Offer II 060. 出现频率最高的 k 个数字 ?
+- 剑指 Offer II 061. 和最小的 k 个数对 ??
+
+前缀树
+
+- 剑指 Offer II 062. 实现前缀树
+- 剑指 Offer II 063. 替换单词 ?
+- 剑指 Offer II 064. 神奇的字典 ??
+- 剑指 Offer II 065. 最短的单词编码
+- 剑指 Offer II 066. 单词之和
+- 剑指 Offer II 067. 最大的异或 ?
+
+二分查找
+
+- 剑指 Offer II 068. 查找插入位置 ※
+- 剑指 Offer II 069. 山峰数组的顶部
+- 剑指 Offer II 070. 排序数组中只出现一次的数字 ※
+- 剑指 Offer II 071. 按权重生成随机数 ※※※
+- 剑指 Offer II 072. 求平方根
+- 剑指 Offer II 073. 狒狒吃香蕉
+
+排序
+
+- 剑指 Offer II 074. 合并区间
+- 剑指 Offer II 075. 数组相对排序 ※
+- 剑指 Offer II 076. 数组中的第 k 大的数字 ※
+- 剑指 Offer II 077. 链表排序 ※※
+- 剑指 Offer II 078. 合并排序链表 ※
+
+回溯法
+
+- 剑指 Offer II 079. 所有子集
+- 剑指 Offer II 080. 含有 k 个元素的组合
+- 剑指 Offer II 081. 允许重复选择元素的组合 ※※※
+- 剑指 Offer II 082. 含有重复元素集合的组合 ※
+- 剑指 Offer II 083. 没有重复元素集合的全排列 ※
+- 剑指 Offer II 084. 含有重复元素集合的全排列
+- 剑指 Offer II 085. 生成匹配的括号
+- 剑指 Offer II 086. 分割回文子字符串 ※※※
+- 剑指 Offer II 087. 复原 IP ※※※
+
+动态规划
+
+- 剑指 Offer II 088. 爬楼梯的最少成本 ※
+- 剑指 Offer II 089. 房屋偷盗
+- 剑指 Offer II 090. 环形房屋偷盗
+- 剑指 Offer II 091. 粉刷房子
+- 剑指 Offer II 092. 翻转字符 ※※※※
+- 剑指 Offer II 093. 最长斐波那契数列 ※※※※
+- 剑指 Offer II 094. 最少回文分割 ※※※※
+- 剑指 Offer II 095. 最长公共子序列
+- 剑指 Offer II 096. 字符串交织 ※※※※
+- 剑指 Offer II 097. 子序列的数目 ※※
+- 剑指 Offer II 098. 路径的数目
+- 剑指 Offer II 099. 最小路径之和
+- 剑指 Offer II 100. 三角形中最小路径之和
+  https://leetcode-cn.com/problems/combination-sum-iv/solution/xi-wang-yong-yi-chong-gui-lu-gao-ding-bei-bao-wen-/
+- 剑指 Offer II 101. 分割等和子集 ※※※
+- 剑指 Offer II 102. 加减的目标值 ※※※
+- 剑指 Offer II 103. 最少的硬币数目 ※※※
+- 剑指 Offer II 104. 排列的数目 ※※※
+
+图
+
+- 剑指 Offer II 105. 岛屿的最大面积
+- 剑指 Offer II 106. 二分图 ※※※
+- 剑指 Offer II 107. 矩阵中的距离 ※※※
+- 剑指 Offer II 108. 单词演变
 - 剑指 Offer II 109. 开密码锁
+- 剑指 Offer II 110. 所有路径 ※
+- 剑指 Offer II 111. 计算除法 ※※※
+- 剑指 Offer II 112. 最长递增路径 ※※
+- 剑指 Offer II 113. 课程顺序 ※
+- 剑指 Offer II 114. 外星文字典
+- 剑指 Offer II 115. 重建序列
+- 剑指 Offer II 116. 省份数量
+- 剑指 Offer II 117. 相似的字符串
+- 剑指 Offer II 118. 多余的边
+- 剑指 Offer II 119. 最长连续序列

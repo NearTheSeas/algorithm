@@ -21,7 +21,7 @@ class Solution:
                 res.append(int(''.join(num)))
                 return
             for i in range(10):
-                num.append(str[i])
+                num.append(str(i))
                 dfs(index+1, num, digit)
                 num.pop()
         res = []

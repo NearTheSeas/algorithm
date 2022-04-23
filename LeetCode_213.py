@@ -18,6 +18,7 @@ class Solution:
             first, second = nums[start], max(nums[start], nums[start+1])
             for i in range(start, end):
                 first, second = second, max(first+nums[i], second)
+            return second
 
         n = len(nums)
         if n == 1:

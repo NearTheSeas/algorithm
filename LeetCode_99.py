@@ -8,6 +8,7 @@ https://leetcode-cn.com/problems/recover-binary-search-tree/
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from base import TreeNode
 
 
 class Solution:

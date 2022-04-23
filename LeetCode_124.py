@@ -13,6 +13,7 @@ https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from base import TreeNode
 
 
 class Solution:
