@@ -10,26 +10,31 @@
  * @return {number}
  */
 var compress = function (chars) {
-  console.log(chars)
   let length = chars.length
-  let prev = null, pos = 0
-  for (let i = 0; i < length; i++) {
-    let cur = chars.unshift()
-    console.log(cur)
-    if (prev || cur != prev) {
-      chars.push(prev)
-      let len = (i - pos + 1)
-      if (len > 1) {
-        chars.push(len)
-      }
+    let prev = chars[0], pos = 0, counter = 0
+    for (let i = 0; i < length; i++) {
+        let cur = chars[i]
+        if (cur != prev) {
+            chars[pos++] = prev
 
-      prev = cur
-      pos = i
+            if (counter > 1) {
+                for (let digit of counter.toString()) {
+                    chars[pos++] = (digit)
+                }
+            }
+            prev = cur
+            counter = 1
+        } else {
+            counter += 1
+        }
     }
-  }
-  console.log(chars)
-
-  chars.length
+    chars[pos++] = prev
+    if (counter > 1) {
+        for (let digit of counter.toString()) {
+            chars[pos++] = (digit)
+        }
+    }
+    chars.length = pos
 };
 // @lc code=end
 
