@@ -227,7 +227,7 @@
 ### 布隆过滤器和 LRU 缓存 LFU
 
 - 了解对应的实现
-- 146. LRU 缓存机制 ※※※
+- 146 [LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
 
 ### 排序算法
 
@@ -348,7 +348,7 @@
 
 ### 数据结构
 
-- 146. LRU 缓存机制
+- 146 [LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
 - 460. LFU 缓存 ※
 - 98. 验证二叉搜索树
 - 99. 恢复二叉搜索树 ※※
@@ -365,7 +365,7 @@
 - 503. 下一个更大元素 II ※
 - 239. 滑动窗口最大值
 - 234. 回文链表
-- 206. 反转链表 ※
+- 206 [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - 92. 反转链表 II ※
 - 25. K 个一组翻转链表
 
@@ -675,7 +675,16 @@
 
 ---
 
-## need vip
+## Microsoft-Hiring
+
+### need vip
 
 - 277 [Find the Celebrity](https://leetcode-cn.com/problems/find-the-celebrity/)
 - 346 [Moving Average from Data Stream](https://leetcode-cn.com/problems/moving-average-from-data-stream/)
+- 253 [Meeting Rooms II](https://leetcode-cn.com/problems/meeting-rooms-ii/)
+
+### LeetCode
+
+- 146 [LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+- 692 [Top K Frequent Words](https://leetcode-cn.com/problems/top-k-frequent-words/) 如何实现最大堆
+- 206 [Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/) 解法: [递归](https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)
