@@ -20,6 +20,7 @@ var merge = function (intervals) {
       ans[ans.length - 1][1] = Math.max(ans[ans.length - 1][1], newEnd)
     }
   }
+  return ans
 };
 // @lc code=end
 
