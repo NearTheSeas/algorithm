@@ -235,7 +235,7 @@
 - 快排、归并
 - 堆排序
 - 计数排序、桶排序、基数排序
-- 56. 合并区间
+- 56 [合并区间](https://leetcode.cn/problems/merge-intervals/)
 - 242 有效的字母异位词
 - 493. 翻转对 逆序对 归并排序 ※
 - 1122. 数组的相对排序 ※※ python sort(cmp=None, key=None, reverse=False) 参数学习
@@ -402,7 +402,7 @@
 - 516. 最长回文子序列 ※
 - 55. 跳跃游戏
 - 45. 跳跃游戏 II ※
-- 56. 合并区间
+- 56 [合并区间](https://leetcode.cn/problems/merge-intervals/)
 - 435. 无重叠区间
 - 452. 用最少数量的箭引爆气球
 - 20 有效的括号
@@ -679,6 +679,9 @@
 
 ### todo
 
+Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
+[题目列表](https://github.com/Microsoft-Hiring/microsoft-hiring.github.io/blob/master/pages/problems/leetcode.md)
+
 共241道题 日均2~3道题 4个月内完成？
 2022.5.9 39/241
 
@@ -693,3 +696,6 @@
 - 146 [LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
 - 692 [Top K Frequent Words](https://leetcode-cn.com/problems/top-k-frequent-words/) 如何实现最大堆
 - 206 [Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/) 解法: [递归](https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)
+- 24 [Swap Nodes in Pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/)
+- 21 [Merge Two Sorted Lists](https://leetcode.cn/problems/merge-two-sorted-lists/)
+- 56 [Merge Intervals](https://leetcode.cn/problems/merge-intervals/)
