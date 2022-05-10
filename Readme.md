@@ -699,3 +699,5 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 24 [Swap Nodes in Pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/)
 - 21 [Merge Two Sorted Lists](https://leetcode.cn/problems/merge-two-sorted-lists/)
 - 56 [Merge Intervals](https://leetcode.cn/problems/merge-intervals/)
+- 268 [Missing Number](https://leetcode.cn/problems/missing-number/)
+- 212 [Word Search II](https://leetcode.cn/problems/word-search-ii/submissions/)
