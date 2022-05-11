@@ -701,3 +701,6 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 56 [Merge Intervals](https://leetcode.cn/problems/merge-intervals/)
 - 268 [Missing Number](https://leetcode.cn/problems/missing-number/)
 - 212 [Word Search II](https://leetcode.cn/problems/word-search-ii/submissions/)
+- 88 [Merge Sorted Array](https://leetcode.cn/problems/merge-sorted-array/)
+- 14 [Longest Common Prefix](https://leetcode.cn/problems/longest-common-prefix/)
+- 328 [Odd Even Linked List](https://leetcode.cn/problems/odd-even-linked-list/)
