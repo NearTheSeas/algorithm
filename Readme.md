@@ -192,7 +192,7 @@
 ### 字典树和并查集
 
 - 208. 实现 Trie ※ (前缀树)
-- 212. 单词搜索 II trie + 回溯
+- 212 [单词搜索](https://leetcode.cn/problems/word-search-ii/submissions/) trie + 回溯
 - 200. 岛屿数量 遍历 标记
 - 130. 被围绕的区域 以边界上的 O 为起点遍历
 - 547. 省份数量 ※
@@ -254,7 +254,7 @@
 
 #### 字符串操作
 
-- 14. 最长公共前缀
+- 14 [最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/)
 - 151. 翻转字符串里的单词
 - 344. 反转字符串
 - 541. 反转字符串 II
@@ -704,3 +704,6 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 88 [Merge Sorted Array](https://leetcode.cn/problems/merge-sorted-array/)
 - 14 [Longest Common Prefix](https://leetcode.cn/problems/longest-common-prefix/)
 - 328 [Odd Even Linked List](https://leetcode.cn/problems/odd-even-linked-list/)
+- 68 [Text Justification](https://leetcode.cn/problems/text-justification/) **
+- 171 [Excel Sheet Column Number](https://leetcode.cn/problems/excel-sheet-column-number/)
+- 11 [Container With Most Water](https://leetcode.cn/problems/container-with-most-water/)
