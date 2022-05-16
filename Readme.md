@@ -357,7 +357,7 @@
 - 700. 二叉搜索树中的搜索
 - 701. 二叉搜索树中的插入操作 ※
 - 105. 从前序与中序遍历序列构造二叉树
-- 124. 二叉树中的最大路径和 ※
+- 124 [二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
 - 222. 完全二叉树的节点个数
 - 297. 二叉树的序列化与反序列化
 - 236. 二叉树的最近公共祖先 ※
@@ -373,7 +373,7 @@
 
 - 78. 子集 ※
 - 77. 组合
-- 46. 全排列
+- 46 [全排列](https://leetcode.cn/problems/permutations/)
 - 37. 解数独 ※
 - 22 括号生成 ※
 - 773. 滑动谜题 ※
@@ -683,7 +683,6 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 [题目列表](https://github.com/Microsoft-Hiring/microsoft-hiring.github.io/blob/master/pages/problems/leetcode.md)
 
 共241道题 日均2~3道题 4个月内完成？
-2022.5.9 39/241
 
 ### need vip
 
@@ -707,3 +706,6 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 68 [Text Justification](https://leetcode.cn/problems/text-justification/) **
 - 171 [Excel Sheet Column Number](https://leetcode.cn/problems/excel-sheet-column-number/)
 - 11 [Container With Most Water](https://leetcode.cn/problems/container-with-most-water/)
+- 124 [Binary Tree Maximum Path Sum](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
+- 46 [Permutations](https://leetcode.cn/problems/permutations/)
+- 200 [Number of Islands](https://leetcode.cn/problems/number-of-islands/)
