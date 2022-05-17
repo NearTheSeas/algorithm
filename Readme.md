@@ -108,7 +108,7 @@
 
 ### 深度优先搜索和广度优先搜索
 
-- 102. 二叉树的层序遍历
+- 102 [二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
 - 433. 最小基因变化 ※
 - 22. 括号生成
 - 515. 在每个树行中找最大值
@@ -709,3 +709,6 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 124 [Binary Tree Maximum Path Sum](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
 - 46 [Permutations](https://leetcode.cn/problems/permutations/)
 - 200 [Number of Islands](https://leetcode.cn/problems/number-of-islands/)
+- 102 [Binary Tree Level Order Traversal](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
+- 15 [3Sum](https://leetcode.cn/problems/3sum/)
+- 79 [Word Search](https://leetcode.cn/problems/word-search/)
