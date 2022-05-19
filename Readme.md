@@ -76,7 +76,7 @@
 
 ### 哈希表、映射、集合
 
-- 49 异位词
+- 49 [异位词](https://leetcode.cn/problems/group-anagrams/)
 - 242 有效的字母异位词
 - 641 实现双端队列
 
@@ -114,12 +114,12 @@
 - 515. 在每个树行中找最大值
 - 127. 单词接龙 ※
 - 126. 单词接龙 II ※
-- 200. 岛屿数量 ※
+- 200 [岛屿数量](https://leetcode.cn/problems/number-of-islands/)
 - 529. 扫雷游戏 ※
 
 ### 岛屿系列问题
 
-- L200. 岛屿数量
+- 200 [岛屿数量](https://leetcode.cn/problems/number-of-islands/)
 - 463. 岛屿的周长
 - 695. 岛屿的最大面积
 - 827. 最大人工岛
@@ -193,7 +193,7 @@
 
 - 208. 实现 Trie ※ (前缀树)
 - 212 [单词搜索](https://leetcode.cn/problems/word-search-ii/submissions/) trie + 回溯
-- 200. 岛屿数量 遍历 标记
+- 200 [岛屿数量](https://leetcode.cn/problems/number-of-islands/)
 - 130. 被围绕的区域 以边界上的 O 为起点遍历
 - 547. 省份数量 ※
 
@@ -263,7 +263,7 @@
 
 #### 异位词问题
 
-- 49. 字母异位词分组
+- 49 [字母异位词分组](https://leetcode.cn/problems/group-anagrams/)
 - 242. 有效的字母异位词
 - 438. 找到字符串中所有字母异位词 ※
 
@@ -356,7 +356,7 @@
 - 450. 删除二叉搜索树中的节点 ※
 - 700. 二叉搜索树中的搜索
 - 701. 二叉搜索树中的插入操作 ※
-- 105. 从前序与中序遍历序列构造二叉树
+- 105 [从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - 124 [二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
 - 222. 完全二叉树的节点个数
 - 297. 二叉树的序列化与反序列化
@@ -381,7 +381,7 @@
 - 1. 两数之和
 - 170. 两数之和 III 数据结构设计
 - 167. 两数之和 II - 输入有序数组
-- 15. 三数之和 ※
+- 15 [三数和](https://leetcode-cn.com/problems/3sum/)
 - 18. 四数之和
 - 224. 基本计算器
 - 227. 基本计算器 II
@@ -712,3 +712,6 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 102 [Binary Tree Level Order Traversal](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
 - 15 [3Sum](https://leetcode.cn/problems/3sum/)
 - 79 [Word Search](https://leetcode.cn/problems/word-search/)
+- 105 [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+- 49 [Group Anagrams](https://leetcode.cn/problems/group-anagrams/)
+- 210 [Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/)
