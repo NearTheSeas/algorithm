@@ -317,10 +317,10 @@
 
 背包问题 416. 分割和子集 474. 一和零 494. 目标和 879. 盈利计划 1049. 最后一块石头的重量 ii
 
-1449. 数位成本和为目标值的最大数字
-1450. 零钱兑换
-1451. 零钱兑换 ii
-1452. 完全平方数
+- 1449. 数位成本和为目标值的最大数字
+- 1450. 零钱兑换
+- 1451. 零钱兑换 ii
+- 1452. 完全平方数
 
 ## labuladong 的算法小抄
 
@@ -591,7 +591,7 @@
 - 剑指 Offer II 066. 单词之和
 - 剑指 Offer II 067. 最大的异或 ?
 
-### 二分查找
+### 二分 offer
 
 - 剑指 Offer II 068. 查找插入位置 ※
 - 剑指 Offer II 069. 山峰数组的顶部
@@ -620,7 +620,7 @@
 - 剑指 Offer II 086. 分割回文子字符串 ※※※
 - 剑指 Offer II 087. 复原 IP ※※※
 
-### 动态规划
+### 动态规划 offer
 
 - 剑指 Offer II 088. 爬楼梯的最少成本 ※
 - 剑指 Offer II 089. 房屋偷盗
@@ -715,3 +715,4 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 105 [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - 49 [Group Anagrams](https://leetcode.cn/problems/group-anagrams/)
 - 210 [Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/)
+- 4 [Median of Two Sorted Arrays](https://leetcode.cn/problems/median-of-two-sorted-arrays/) 还得再看看
