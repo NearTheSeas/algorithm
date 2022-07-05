@@ -689,6 +689,7 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 277 [Find the Celebrity](https://leetcode-cn.com/problems/find-the-celebrity/)
 - 346 [Moving Average from Data Stream](https://leetcode-cn.com/problems/moving-average-from-data-stream/)
 - 253 [Meeting Rooms II](https://leetcode-cn.com/problems/meeting-rooms-ii/)
+- 252 [Meeting Rooms](https://leetcode.cn/problems/meeting-rooms/)
 
 ### LeetCode
 
@@ -716,3 +717,5 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 49 [Group Anagrams](https://leetcode.cn/problems/group-anagrams/)
 - 210 [Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/)
 - 4 [Median of Two Sorted Arrays](https://leetcode.cn/problems/median-of-two-sorted-arrays/) 还得再看看
+- 3 [Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
+- 78 [subsets](https://leetcode.cn/problems/subsets/)
