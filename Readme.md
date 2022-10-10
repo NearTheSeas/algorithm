@@ -690,6 +690,7 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 346 [Moving Average from Data Stream](https://leetcode-cn.com/problems/moving-average-from-data-stream/)
 - 253 [Meeting Rooms II](https://leetcode-cn.com/problems/meeting-rooms-ii/)
 - 252 [Meeting Rooms](https://leetcode.cn/problems/meeting-rooms/)
+- 772 [basic calculator iii](https://leetcode.cn/problems/basic-calculator-iii/)
 
 ### LeetCode
 
@@ -719,3 +720,12 @@ Microsoft-Hiring：一个微软HR做的网站，一些微软介绍以及题目
 - 4 [Median of Two Sorted Arrays](https://leetcode.cn/problems/median-of-two-sorted-arrays/) 还得再看看
 - 3 [Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
 - 78 [subsets](https://leetcode.cn/problems/subsets/)
+- 468 [Validate IP Address](https://leetcode.cn/problems/validate-ip-address/) TODO
+- 151 [Reverse Words in a String](https://leetcode.cn/problems/reverse-words-in-a-string/)
+- 235 [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) 简单题都不会了
+- 236 [Lowest Common Ancestor of a Binary Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) 需要回顾
+- 165 [Compare Version Numbers](https://leetcode.cn/problems/compare-version-numbers/)
+- 117 [Populating Next Right Pointers in Each Node II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
+- 20 [Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/)
+- 722 [Remove Comments](https://leetcode.cn/problems/remove-comments/) TODO
+- 215 [Kth Largest Element in an Array](https://leetcode.cn/problems/kth-largest-element-in-an-array/submissions/)
